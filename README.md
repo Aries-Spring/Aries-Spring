@@ -4,9 +4,9 @@
 
 **An interactive fantasy role-playing game powered by GitHub Issues and AI!**
 
-[![GitHub Stars](https://img.shields.io/github/starsAries-SpringAries-Spring?style=for-the-badge&logo=github&color=yellow)](https://github.com/Aries-Spring/Aries-Spring/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forksAries-SpringAries-Spring?style=for-the-badge&logo=github&color=blue)](https://github.com/Aries-Spring/Aries-Spring/network/members)
-[![Active Games](https://img.shields.io/github/issuesAries-SpringAries-Spring/game-active?style=for-the-badge&logo=github&color=green&label=Active%20Games)](https://github.com/Aries-Spring/Aries-Spring/issues?q=is%3Aissue+is%3Aopen+label%3Agame-active)
+[![GitHub Stars](https://img.shields.io/github/stars/Aries-Spring/Aries-Spring?style=for-the-badge&logo=github&color=yellow)](https://github.com/Aries-Spring/Aries-Spring/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/Aries-Spring/Aries-Spring?style=for-the-badge&logo=github&color=blue)](https://github.com/Aries-Spring/Aries-Spring/network/members)
+[![Active Games](https://img.shields.io/github/issues/Aries-Spring/Aries-Spring/game-active?style=for-the-badge&logo=github&color=green&label=Active%20Games)](https://github.com/Aries-Spring/Aries-Spring/issues?q=is%3Aissue+is%3Aopen+label%3Agame-active)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
 _Create your character, explore a rich fantasy world, and embark on epic adventures—all through GitHub Issues!_
@@ -158,12 +158,12 @@ _High strength and constitution_
 
 ### 🎮 Live Game Statistics
 
-| Stat                     | Value                                                                                                                                                                                                               |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 🎯 **Active Adventures** | [![Active Games](https://img.shields.io/github/issuesAries-SpringAries-Spring/game-active?logo=github&color=green)](https://github.com/Aries-Spring/Aries-Spring/issues?q=is%3Aissue+is%3Aopen+label%3Agame-active) |
-| ⭐ **Repository Stars**  | [![GitHub Stars](https://img.shields.io/github/starsAries-SpringAries-Spring?logo=github&color=yellow)](https://github.com/Aries-Spring/Aries-Spring/stargazers)                                                    |
-| 🍴 **Forks**             | [![GitHub Forks](https://img.shields.io/github/forksAries-SpringAries-Spring?logo=github&color=blue)](https://github.com/Aries-Spring/Aries-Spring/network/members)                                                 |
-| 📝 **Total Issues**      | [![GitHub Issues](https://img.shields.io/github/issuesAries-SpringAries-Spring?logo=github)](https://github.com/Aries-Spring/Aries-Spring/issues)                                                                   |
+| Stat                     | Value                                                                                                                                                                                                                 |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 🎯 **Active Adventures** | [![Active Games](https://img.shields.io/github/issues/Aries-Spring/Aries-Spring/game-active?logo=github&color=green)](https://github.com/Aries-Spring/Aries-Spring/issues?q=is%3Aissue+is%3Aopen+label%3Agame-active) |
+| ⭐ **Repository Stars**  | [![GitHub Stars](https://img.shields.io/github/stars/Aries-Spring/Aries-Spring?logo=github&color=yellow)](https://github.com/Aries-Spring/Aries-Spring/stargazers)                                                    |
+| 🍴 **Forks**             | [![GitHub Forks](https://img.shields.io/github/forks/Aries-Spring/Aries-Spring?logo=github&color=blue)](https://github.com/Aries-Spring/Aries-Spring/network/members)                                                 |
+| 📝 **Total Issues**      | [![GitHub Issues](https://img.shields.io/github/issues/Aries-Spring/Aries-Spring?logo=github)](https://github.com/Aries-Spring/Aries-Spring/issues)                                                                   |
 
 </div>
 
