@@ -4,9 +4,9 @@
 
 **An interactive fantasy role-playing game powered by GitHub Issues and AI!**
 
-[![GitHub Stars](https://img.shields.io/github/starsAries-SpringAries-Spring?style=for-the-badge&logo=github&color=yellow)](https://github.com/Aries-Spring/Aries-Spring/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forksAries-SpringAries-Spring?style=for-the-badge&logo=github&color=blue)](https://github.com/Aries-Spring/Aries-Spring/network/members)
-[![Active Games](https://img.shields.io/github/issuesAries-SpringAries-Spring/game-active?style=for-the-badge&logo=github&color=green&label=Active%20Games)](https://github.com/Aries-Spring/Aries-Spring/issues?q=is%3Aissue+is%3Aopen+label%3Agame-active)
+[![GitHub Stars](https://img.shields.io/github/starsAries-SpringAries-Spring?style=for-the-badge&logo=github&color=yellow)](https://github.comAries-SpringAries-Spring/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forksAries-SpringAries-Spring?style=for-the-badge&logo=github&color=blue)](https://github.comAries-SpringAries-Spring/network/members)
+[![Active Games](https://img.shields.io/github/issuesAries-SpringAries-Spring/game-active?style=for-the-badge&logo=github&color=green&label=Active%20Games)](https://github.comAries-SpringAries-Spring/issues?q=is%3Aissue+is%3Aopen+label%3Agame-active)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
 _Create your character, explore a rich fantasy world, and embark on epic adventures—all through GitHub Issues!_
@@ -41,7 +41,7 @@ Click on a class below to start your adventure! Each class has unique abilities 
 
 _High strength and constitution_
 <br/><br/>
-[![Create Warrior](https://img.shields.io/badge/Create%20Issue-Warrior-red?style=for-the-badge&logo=github)](https://github.com/Aries-Spring/Aries-Spring/issues/new?title=%5BGAME%5D%20Warrior%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Warrior&labels=game-active)
+[![Create Warrior](https://img.shields.io/badge/Create%20Issue-Warrior-red?style=for-the-badge&logo=github)](https://github.comAries-SpringAries-Spring/issues/new?title=%5BGAME%5D%20Warrior%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Warrior&labels=game-active)
 
 </td>
 <td align="center" width="200">
@@ -50,7 +50,7 @@ _High strength and constitution_
 
 _High intelligence and wisdom_
 <br/><br/>
-[![Create Mage](https://img.shields.io/badge/Create%20Issue-Mage-purple?style=for-the-badge&logo=github)](https://github.com/Aries-Spring/Aries-Spring/issues/new?title=%5BGAME%5D%20Mage%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Mage&labels=game-active)
+[![Create Mage](https://img.shields.io/badge/Create%20Issue-Mage-purple?style=for-the-badge&logo=github)](https://github.comAries-SpringAries-Spring/issues/new?title=%5BGAME%5D%20Mage%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Mage&labels=game-active)
 
 </td>
 <td align="center" width="200">
@@ -59,7 +59,7 @@ _High intelligence and wisdom_
 
 _High dexterity and stealth_
 <br/><br/>
-[![Create Rogue](https://img.shields.io/badge/Create%20Issue-Rogue-gray?style=for-the-badge&logo=github)](https://github.com/Aries-Spring/Aries-Spring/issues/new?title=%5BGAME%5D%20Rogue%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Rogue&labels=game-active)
+[![Create Rogue](https://img.shields.io/badge/Create%20Issue-Rogue-gray?style=for-the-badge&logo=github)](https://github.comAries-SpringAries-Spring/issues/new?title=%5BGAME%5D%20Rogue%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Rogue&labels=game-active)
 
 </td>
 <td align="center" width="200">
@@ -68,7 +68,7 @@ _High dexterity and stealth_
 
 _High wisdom and healing_
 <br/><br/>
-[![Create Cleric](https://img.shields.io/badge/Create%20Issue-Cleric-blue?style=for-the-badge&logo=github)](https://github.com/Aries-Spring/Aries-Spring/issues/new?title=%5BGAME%5D%20Cleric%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Cleric&labels=game-active)
+[![Create Cleric](https://img.shields.io/badge/Create%20Issue-Cleric-blue?style=for-the-badge&logo=github)](https://github.comAries-SpringAries-Spring/issues/new?title=%5BGAME%5D%20Cleric%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Cleric&labels=game-active)
 
 </td>
 </tr>
@@ -79,7 +79,7 @@ _High wisdom and healing_
 
 _Balanced dexterity and wisdom_
 <br/><br/>
-[![Create Ranger](https://img.shields.io/badge/Create%20Issue-Ranger-green?style=for-the-badge&logo=github)](https://github.com/Aries-Spring/Aries-Spring/issues/new?title=%5BGAME%5D%20Ranger%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Ranger&labels=game-active)
+[![Create Ranger](https://img.shields.io/badge/Create%20Issue-Ranger-green?style=for-the-badge&logo=github)](https://github.comAries-SpringAries-Spring/issues/new?title=%5BGAME%5D%20Ranger%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Ranger&labels=game-active)
 
 </td>
 <td align="center">
@@ -88,7 +88,7 @@ _Balanced dexterity and wisdom_
 
 _Balanced strength and wisdom_
 <br/><br/>
-[![Create Paladin](https://img.shields.io/badge/Create%20Issue-Paladin-yellow?style=for-the-badge&logo=github)](https://github.com/Aries-Spring/Aries-Spring/issues/new?title=%5BGAME%5D%20Paladin%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Paladin&labels=game-active)
+[![Create Paladin](https://img.shields.io/badge/Create%20Issue-Paladin-yellow?style=for-the-badge&logo=github)](https://github.comAries-SpringAries-Spring/issues/new?title=%5BGAME%5D%20Paladin%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Paladin&labels=game-active)
 
 </td>
 <td align="center">
@@ -97,7 +97,7 @@ _Balanced strength and wisdom_
 
 _High charisma and magic_
 <br/><br/>
-[![Create Bard](https://img.shields.io/badge/Create%20Issue-Bard-pink?style=for-the-badge&logo=github)](https://github.com/Aries-Spring/Aries-Spring/issues/new?title=%5BGAME%5D%20Bard%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Bard&labels=game-active)
+[![Create Bard](https://img.shields.io/badge/Create%20Issue-Bard-pink?style=for-the-badge&logo=github)](https://github.comAries-SpringAries-Spring/issues/new?title=%5BGAME%5D%20Bard%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Bard&labels=game-active)
 
 </td>
 <td align="center">
@@ -106,7 +106,7 @@ _High charisma and magic_
 
 _High dexterity and wisdom_
 <br/><br/>
-[![Create Monk](https://img.shields.io/badge/Create%20Issue-Monk-orange?style=for-the-badge&logo=github)](https://github.com/Aries-Spring/Aries-Spring/issues/new?title=%5BGAME%5D%20Monk%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Monk&labels=game-active)
+[![Create Monk](https://img.shields.io/badge/Create%20Issue-Monk-orange?style=for-the-badge&logo=github)](https://github.comAries-SpringAries-Spring/issues/new?title=%5BGAME%5D%20Monk%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Monk&labels=game-active)
 
 </td>
 </tr>
@@ -117,7 +117,7 @@ _High dexterity and wisdom_
 
 _High intelligence and charisma_
 <br/><br/>
-[![Create Warlock](https://img.shields.io/badge/Create%20Issue-Warlock-darkred?style=for-the-badge&logo=github)](https://github.com/Aries-Spring/Aries-Spring/issues/new?title=%5BGAME%5D%20Warlock%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Warlock&labels=game-active)
+[![Create Warlock](https://img.shields.io/badge/Create%20Issue-Warlock-darkred?style=for-the-badge&logo=github)](https://github.comAries-SpringAries-Spring/issues/new?title=%5BGAME%5D%20Warlock%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Warlock&labels=game-active)
 
 </td>
 <td align="center">
@@ -126,7 +126,7 @@ _High intelligence and charisma_
 
 _High wisdom and nature magic_
 <br/><br/>
-[![Create Druid](https://img.shields.io/badge/Create%20Issue-Druid-darkgreen?style=for-the-badge&logo=github)](https://github.com/Aries-Spring/Aries-Spring/issues/new?title=%5BGAME%5D%20Druid%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Druid&labels=game-active)
+[![Create Druid](https://img.shields.io/badge/Create%20Issue-Druid-darkgreen?style=for-the-badge&logo=github)](https://github.comAries-SpringAries-Spring/issues/new?title=%5BGAME%5D%20Druid%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Druid&labels=game-active)
 
 </td>
 <td align="center">
@@ -135,7 +135,7 @@ _High wisdom and nature magic_
 
 _High intelligence and charisma_
 <br/><br/>
-[![Create Sorcerer](https://img.shields.io/badge/Create%20Issue-Sorcerer-cyan?style=for-the-badge&logo=github)](https://github.com/Aries-Spring/Aries-Spring/issues/new?title=%5BGAME%5D%20Sorcerer%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Sorcerer&labels=game-active)
+[![Create Sorcerer](https://img.shields.io/badge/Create%20Issue-Sorcerer-cyan?style=for-the-badge&logo=github)](https://github.comAries-SpringAries-Spring/issues/new?title=%5BGAME%5D%20Sorcerer%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Sorcerer&labels=game-active)
 
 </td>
 <td align="center">
@@ -144,7 +144,7 @@ _High intelligence and charisma_
 
 _High strength and constitution_
 <br/><br/>
-[![Create Barbarian](https://img.shields.io/badge/Create%20Issue-Barbarian-maroon?style=for-the-badge&logo=github)](https://github.com/Aries-Spring/Aries-Spring/issues/new?title=%5BGAME%5D%20Barbarian%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Barbarian&labels=game-active)
+[![Create Barbarian](https://img.shields.io/badge/Create%20Issue-Barbarian-maroon?style=for-the-badge&logo=github)](https://github.comAries-SpringAries-Spring/issues/new?title=%5BGAME%5D%20Barbarian%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Barbarian&labels=game-active)
 
 </td>
 </tr>
@@ -158,12 +158,12 @@ _High strength and constitution_
 
 ### 🎮 Live Game Statistics
 
-| Stat                     | Value                                                                                                                                                                                                               |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 🎯 **Active Adventures** | [![Active Games](https://img.shields.io/github/issuesAries-SpringAries-Spring/game-active?logo=github&color=green)](https://github.com/Aries-Spring/Aries-Spring/issues?q=is%3Aissue+is%3Aopen+label%3Agame-active) |
-| ⭐ **Repository Stars**  | [![GitHub Stars](https://img.shields.io/github/starsAries-SpringAries-Spring?logo=github&color=yellow)](https://github.com/Aries-Spring/Aries-Spring/stargazers)                                                    |
-| 🍴 **Forks**             | [![GitHub Forks](https://img.shields.io/github/forksAries-SpringAries-Spring?logo=github&color=blue)](https://github.com/Aries-Spring/Aries-Spring/network/members)                                                 |
-| 📝 **Total Issues**      | [![GitHub Issues](https://img.shields.io/github/issuesAries-SpringAries-Spring?logo=github)](https://github.com/Aries-Spring/Aries-Spring/issues)                                                                   |
+| Stat                     | Value                                                                                                                                                                                                             |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 🎯 **Active Adventures** | [![Active Games](https://img.shields.io/github/issuesAries-SpringAries-Spring/game-active?logo=github&color=green)](https://github.comAries-SpringAries-Spring/issues?q=is%3Aissue+is%3Aopen+label%3Agame-active) |
+| ⭐ **Repository Stars**  | [![GitHub Stars](https://img.shields.io/github/starsAries-SpringAries-Spring?logo=github&color=yellow)](https://github.comAries-SpringAries-Spring/stargazers)                                                    |
+| 🍴 **Forks**             | [![GitHub Forks](https://img.shields.io/github/forksAries-SpringAries-Spring?logo=github&color=blue)](https://github.comAries-SpringAries-Spring/network/members)                                                 |
+| 📝 **Total Issues**      | [![GitHub Issues](https://img.shields.io/github/issuesAries-SpringAries-Spring?logo=github)](https://github.comAries-SpringAries-Spring/issues)                                                                   |
 
 </div>
 
