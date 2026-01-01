@@ -1,0 +1,25 @@
+{
+  "name": "github-readme-game",
+  "version": "1.0.0",
+  "description": "An interactive fantasy RPG powered by GitHub Issues and Actions",
+  "main": "scripts/process-action.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "github",
+    "game",
+    "rpg",
+    "actions",
+    "issues"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/rest": "^20.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+
