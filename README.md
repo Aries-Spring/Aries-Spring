@@ -1,8 +1,10 @@
 <div align="center">
 
-# 🎮 Aries Spring - GitHub RPG Adventure
+# 🎮 GitHub RPG Adventure
 
 **An interactive fantasy role-playing game powered by GitHub Issues and AI!**
+
+> You've all seen those usual GitHub README's containing a list of skills, projects, about, etc. Well, that tends to get boring after a while. So, Presenting you with something that's actually fun and engaging!
 
 [![GitHub Stars](https://img.shields.io/github/stars/Aries-Spring/Aries-Spring?style=for-the-badge&logo=github&color=yellow)](https://github.com/Aries-Spring/Aries-Spring/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/Aries-Spring/Aries-Spring?style=for-the-badge&logo=github&color=blue)](https://github.com/Aries-Spring/Aries-Spring/network/members)
