@@ -14,6 +14,11 @@ function getCharacter(gameState, username) {
  * Checks if a comment is a character creation comment
  */
 function isCharacterCreationComment(commentBody) {
+  // Handle null/undefined/empty input
+  if (!commentBody || typeof commentBody !== 'string') {
+    return false;
+  }
+  
   const lower = commentBody.toLowerCase();
   return lower.includes('create') && 
          (lower.includes('character') || lower.includes('i want to be') || lower.includes('i am'));
@@ -43,9 +48,12 @@ async function createCharacter(gameState, username, commentBody = null, displayN
   let characterName = displayName || username;
   let characterClass = className || 'Adventurer';
   
+  // Initialize characterInfo to null (will be set if commentBody is provided)
+  let characterInfo = null;
+  
   // If comment body provided (legacy support), try to parse from it
   if (commentBody) {
-    const characterInfo = parseCharacterCreation(commentBody);
+    characterInfo = parseCharacterCreation(commentBody);
     if (characterInfo) {
       // Use parsed name if provided, otherwise use display name
       characterName = characterInfo.name || characterName;
@@ -72,12 +80,12 @@ async function createCharacter(gameState, username, commentBody = null, displayN
     inventory: [],
     gold: 50,
     stats: {
-      strength: characterInfo.stats?.strength || 10,
-      dexterity: characterInfo.stats?.dexterity || 10,
-      intelligence: characterInfo.stats?.intelligence || 10,
-      wisdom: characterInfo.stats?.wisdom || 10,
-      constitution: characterInfo.stats?.constitution || 10,
-      charisma: characterInfo.stats?.charisma || 10,
+      strength: characterInfo?.stats?.strength || 10,
+      dexterity: characterInfo?.stats?.dexterity || 10,
+      intelligence: characterInfo?.stats?.intelligence || 10,
+      wisdom: characterInfo?.stats?.wisdom || 10,
+      constitution: characterInfo?.stats?.constitution || 10,
+      charisma: characterInfo?.stats?.charisma || 10,
     },
     quests: [],
     createdAt: new Date().toISOString(),
@@ -97,6 +105,11 @@ async function createCharacter(gameState, username, commentBody = null, displayN
  * Parses character creation information from a comment
  */
 function parseCharacterCreation(commentBody) {
+  // Handle null/undefined input
+  if (!commentBody || typeof commentBody !== 'string') {
+    return {};
+  }
+  
   const lower = commentBody.toLowerCase();
   const result = {};
 
