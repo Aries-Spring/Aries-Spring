@@ -1,162 +1,290 @@
-# 🎮 GitHub README Game
+<div align="center">
 
-An interactive fantasy role-playing game powered by GitHub Issues and Actions! Create your character, explore a rich fantasy world, and embark on epic adventures—all through GitHub comments.
+# 🎮 Aries Spring - GitHub RPG Adventure
 
-## 🚀 How to Play
+**An interactive fantasy role-playing game powered by GitHub Issues and AI!**
 
-### Getting Started
+[![GitHub Stars](https://img.shields.io/github/stars/lightyagami/Aries-Spring?style=for-the-badge&logo=github&color=yellow)](https://github.com/lightyagami/Aries-Spring/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/lightyagami/Aries-Spring?style=for-the-badge&logo=github&color=blue)](https://github.com/lightyagami/Aries-Spring/network/members)
+[![Active Games](https://img.shields.io/github/issues/lightyagami/Aries-Spring/game-active?style=for-the-badge&logo=github&color=green&label=Active%20Games)](https://github.com/lightyagami/Aries-Spring/issues?q=is%3Aissue+is%3Aopen+label%3Agame-active)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
-1. **Create a new issue** in this repository
-2. **Add the `game-active` label** to your issue (or ask a maintainer to add it)
-3. **Create your character** by commenting on the issue with something like:
-   - "I want to create a character named [Your Name], a [Class]"
-   - "Create character: [Name], [Class]"
-   - Example: "I want to create a character named Aria, a Mage"
+*Create your character, explore a rich fantasy world, and embark on epic adventures—all through GitHub Issues!*
 
-4. **Start playing!** After your character is created, simply comment with actions in natural language:
-   - "I explore the forest"
-   - "I talk to the merchant"
-   - "I cast a fireball at the goblin"
-   - "I search for treasure"
+[🚀 Quick Start](#-quick-start) • [⚔️ Choose Your Class](#️-choose-your-class) • [📊 Game Stats](#-game-stats) • [📖 How to Play](#-how-to-play)
 
-### Character Creation
+</div>
 
-Each GitHub user can create **one character** per issue. When creating your character, you can choose:
+---
 
-- **Name**: Your character's name
-- **Class**: Choose from Warrior, Mage, Rogue, Cleric, Ranger, Paladin, Bard, Monk, Warlock, Druid, Sorcerer, or Barbarian
+## 🎯 Quick Start
 
-Each class has unique stat bonuses that will be applied automatically.
+**Starting your adventure is simple!**
 
-### Game Mechanics
+1. **Choose your class** below (click a class button)
+2. **Your character is created automatically** when you open the issue
+3. **Start playing** by commenting with actions like "I explore the forest"
 
-- **Natural Language Actions**: Type what you want to do in plain English. The AI game master will interpret your actions and respond accordingly.
+> 💡 **Pro Tip:** Your character name will be your GitHub profile name automatically!
 
-- **Character Stats**: Your character has:
-  - Health and Mana
-  - Six core attributes: Strength, Dexterity, Intelligence, Wisdom, Constitution, Charisma
-  - Level and Experience
-  - Gold and Inventory
-  - Active Quests
+---
 
-- **World Exploration**: Explore different locations, interact with NPCs, fight monsters, complete quests, and discover treasures.
+## ⚔️ Choose Your Class
 
-- **State Persistence**: Your game state is saved in the issue body, so you can continue your adventure anytime by commenting on your issue.
+Click on a class below to start your adventure! Each class has unique abilities and stat bonuses.
+
+<table>
+<tr>
+<td align="center" width="200">
+
+### 🛡️ Warrior
+*High strength and constitution*
+<br/><br/>
+[![Create Warrior](https://img.shields.io/badge/Create%20Issue-Warrior-red?style=for-the-badge&logo=github)](https://github.com/lightyagami/Aries-Spring/issues/new?title=%5BGAME%5D%20Warrior%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Warrior&labels=game-active)
+
+</td>
+<td align="center" width="200">
+
+### 🔮 Mage
+*High intelligence and wisdom*
+<br/><br/>
+[![Create Mage](https://img.shields.io/badge/Create%20Issue-Mage-purple?style=for-the-badge&logo=github)](https://github.com/lightyagami/Aries-Spring/issues/new?title=%5BGAME%5D%20Mage%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Mage&labels=game-active)
+
+</td>
+<td align="center" width="200">
+
+### 🗡️ Rogue
+*High dexterity and stealth*
+<br/><br/>
+[![Create Rogue](https://img.shields.io/badge/Create%20Issue-Rogue-gray?style=for-the-badge&logo=github)](https://github.com/lightyagami/Aries-Spring/issues/new?title=%5BGAME%5D%20Rogue%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Rogue&labels=game-active)
+
+</td>
+<td align="center" width="200">
+
+### ✨ Cleric
+*High wisdom and healing*
+<br/><br/>
+[![Create Cleric](https://img.shields.io/badge/Create%20Issue-Cleric-blue?style=for-the-badge&logo=github)](https://github.com/lightyagami/Aries-Spring/issues/new?title=%5BGAME%5D%20Cleric%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Cleric&labels=game-active)
+
+</td>
+</tr>
+<tr>
+<td align="center">
+
+### 🏹 Ranger
+*Balanced dexterity and wisdom*
+<br/><br/>
+[![Create Ranger](https://img.shields.io/badge/Create%20Issue-Ranger-green?style=for-the-badge&logo=github)](https://github.com/lightyagami/Aries-Spring/issues/new?title=%5BGAME%5D%20Ranger%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Ranger&labels=game-active)
+
+</td>
+<td align="center">
+
+### ⚔️ Paladin
+*Balanced strength and wisdom*
+<br/><br/>
+[![Create Paladin](https://img.shields.io/badge/Create%20Issue-Paladin-yellow?style=for-the-badge&logo=github)](https://github.com/lightyagami/Aries-Spring/issues/new?title=%5BGAME%5D%20Paladin%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Paladin&labels=game-active)
+
+</td>
+<td align="center">
+
+### 🎵 Bard
+*High charisma and magic*
+<br/><br/>
+[![Create Bard](https://img.shields.io/badge/Create%20Issue-Bard-pink?style=for-the-badge&logo=github)](https://github.com/lightyagami/Aries-Spring/issues/new?title=%5BGAME%5D%20Bard%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Bard&labels=game-active)
+
+</td>
+<td align="center">
+
+### 🥋 Monk
+*High dexterity and wisdom*
+<br/><br/>
+[![Create Monk](https://img.shields.io/badge/Create%20Issue-Monk-orange?style=for-the-badge&logo=github)](https://github.com/lightyagami/Aries-Spring/issues/new?title=%5BGAME%5D%20Monk%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Monk&labels=game-active)
+
+</td>
+</tr>
+<tr>
+<td align="center">
+
+### 🔥 Warlock
+*High intelligence and charisma*
+<br/><br/>
+[![Create Warlock](https://img.shields.io/badge/Create%20Issue-Warlock-darkred?style=for-the-badge&logo=github)](https://github.com/lightyagami/Aries-Spring/issues/new?title=%5BGAME%5D%20Warlock%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Warlock&labels=game-active)
+
+</td>
+<td align="center">
+
+### 🌿 Druid
+*High wisdom and nature magic*
+<br/><br/>
+[![Create Druid](https://img.shields.io/badge/Create%20Issue-Druid-darkgreen?style=for-the-badge&logo=github)](https://github.com/lightyagami/Aries-Spring/issues/new?title=%5BGAME%5D%20Druid%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Druid&labels=game-active)
+
+</td>
+<td align="center">
+
+### ⚡ Sorcerer
+*High intelligence and charisma*
+<br/><br/>
+[![Create Sorcerer](https://img.shields.io/badge/Create%20Issue-Sorcerer-cyan?style=for-the-badge&logo=github)](https://github.com/lightyagami/Aries-Spring/issues/new?title=%5BGAME%5D%20Sorcerer%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Sorcerer&labels=game-active)
+
+</td>
+<td align="center">
+
+### 💪 Barbarian
+*High strength and constitution*
+<br/><br/>
+[![Create Barbarian](https://img.shields.io/badge/Create%20Issue-Barbarian-maroon?style=for-the-badge&logo=github)](https://github.com/lightyagami/Aries-Spring/issues/new?title=%5BGAME%5D%20Barbarian%20Adventure&body=I%20want%20to%20create%20a%20character%20as%20a%20Barbarian&labels=game-active)
+
+</td>
+</tr>
+</table>
+
+---
+
+## 📊 Game Stats
+
+<div align="center">
+
+### 🎮 Live Game Statistics
+
+| Stat | Value |
+|------|-------|
+| 🎯 **Active Adventures** | [![Active Games](https://img.shields.io/github/issues/lightyagami/Aries-Spring/game-active?logo=github&color=green)](https://github.com/lightyagami/Aries-Spring/issues?q=is%3Aissue+is%3Aopen+label%3Agame-active) |
+| ⭐ **Repository Stars** | [![GitHub Stars](https://img.shields.io/github/stars/lightyagami/Aries-Spring?logo=github&color=yellow)](https://github.com/lightyagami/Aries-Spring/stargazers) |
+| 🍴 **Forks** | [![GitHub Forks](https://img.shields.io/github/forks/lightyagami/Aries-Spring?logo=github&color=blue)](https://github.com/lightyagami/Aries-Spring/network/members) |
+| 📝 **Total Issues** | [![GitHub Issues](https://img.shields.io/github/issues/lightyagami/Aries-Spring?logo=github)](https://github.com/lightyagami/Aries-Spring/issues) |
+
+</div>
+
+---
+
+## 📖 How to Play
+
+### 🚀 Getting Started
+
+1. **Click a class button** above to create your character
+2. **Your character is automatically created** when the issue opens
+3. **Start playing** by commenting with natural language actions
+
+### 🎮 Gameplay
+
+Simply comment on your issue with actions in plain English:
+
+```
+I explore the forest
+I talk to the merchant
+I cast a fireball at the goblin
+I search for treasure
+I rest at the inn
+I buy a sword from the blacksmith
+```
+
+The AI game master will interpret your actions and respond with immersive narrative!
+
+### 📊 Character System
+
+Your character has:
+
+- **Health & Mana**: Your life force and magical energy
+- **Six Core Attributes**: Strength, Dexterity, Intelligence, Wisdom, Constitution, Charisma
+- **Level & Experience**: Grow stronger as you play
+- **Gold & Inventory**: Collect items and wealth
+- **Active Quests**: Complete missions for rewards
+
+### 🌍 World of Aetheria
+
+Explore a rich fantasy world with:
+
+- **🏘️ Villages & Cities**: Safe havens to rest, trade, and receive quests
+- **🏰 Dungeons & Caves**: Dangerous areas filled with monsters and treasure
+- **🌲 Forests & Wilderness**: Discover resources, encounters, and secrets
+- **👥 NPCs**: Characters to interact with, trade with, or receive quests from
+- **👹 Monsters**: Creatures to fight for experience and loot
+
+### 🔒 Single Player Mode
+
+Each issue is locked to its creator. This ensures your adventure is personal and uninterrupted. Create your own issue to start playing!
+
+---
 
 ## 🎯 Example Actions
 
-Here are some examples of actions you can try:
+Here are some actions you can try:
 
-```
-I walk to the market
-I buy a sword from the merchant
-I explore the dark forest
-I cast a healing spell on myself
-I attack the bandit with my sword
-I search for hidden treasure
-I talk to the village elder
-I rest at the inn
-I accept the quest to find the lost artifact
-I use my potion of healing
-I investigate the mysterious cave
-```
+| Action Type | Examples |
+|------------|----------|
+| **Exploration** | `I explore the dark forest`<br/>`I investigate the mysterious cave`<br/>`I walk to the market` |
+| **Combat** | `I attack the bandit with my sword`<br/>`I cast a fireball at the goblin`<br/>`I defend against the dragon's breath` |
+| **Interaction** | `I talk to the village elder`<br/>`I ask the merchant about rare items`<br/>`I accept the quest to find the lost artifact` |
+| **Items** | `I buy a sword from the blacksmith`<br/>`I use my potion of healing`<br/>`I search for hidden treasure` |
+| **Rest** | `I rest at the inn`<br/>`I meditate to restore mana`<br/>`I sleep until morning` |
 
-## 🌍 World Lore
-
-The game takes place in a fantasy world with:
-
-- **Villages and Cities**: Safe havens where you can rest, trade, and receive quests
-- **Dungeons and Caves**: Dangerous areas filled with monsters and treasure
-- **Forests and Wilderness**: Explore to find resources, encounters, and secrets
-- **NPCs**: Characters you can interact with, trade with, or receive quests from
-- **Monsters**: Creatures you can fight for experience and loot
-
-The world follows consistent rules and lore. Actions that break the game's rules or are impossible will be rejected with an explanation.
+---
 
 ## 🔧 Setup Instructions
 
-To set up this game in your own repository:
+Want to run this game in your own repository?
 
-### 1. Repository Setup
+### Quick Setup
 
-1. **Fork or clone this repository**
-2. **Enable GitHub Actions** in your repository settings
+1. **Fork this repository**
+2. **Enable GitHub Actions** in repository settings
+3. **Add `GROK_API_KEY` secret** (get your key from [X.AI](https://x.ai))
+4. **Create `game-active` label** in Issues → Labels
+5. **Start playing!**
 
-### 2. Install Dependencies
+For detailed setup instructions, see [SETUP.md](SETUP.md).
 
-Create a `package.json` file (if it doesn't exist) and install required dependencies:
-
-```bash
-npm init -y
-npm install @octokit/rest
-```
-
-### 3. Configure GitHub Secrets
-
-1. Go to your repository's **Settings** → **Secrets and variables** → **Actions**
-2. Click **New repository secret**
-3. Add a secret named `GROK_API_KEY` with your Grok API key
-   - Get your API key from [X.AI](https://x.ai)
-
-### 4. Create Issue Template (Optional)
-
-Create `.github/ISSUE_TEMPLATE/game-start.md`:
-
-```markdown
 ---
-name: Start New Game
-about: Create a new game session
-title: "[GAME] [Your Character Name]'s Adventure"
-labels: game-active
----
-
-# Character Creation
-
-I want to create a character named [Your Name], a [Your Class]
-```
-
-### 5. Create Game Label
-
-1. Go to **Issues** → **Labels**
-2. Create a new label named `game-active` (or `game`)
-3. Choose a color (e.g., green or blue)
-
-### 6. Test the Game
-
-1. Create a new issue
-2. Add the `game-active` label
-3. Comment to create your character
-4. Start playing!
 
 ## 📝 How It Works
 
-1. **Player comments** on an issue with the `game-active` label
-2. **GitHub Action triggers** and processes the comment
-3. **Character validation** ensures one character per user
-4. **Game state** is loaded from the issue body
-5. **Grok AI** interprets the action with full game context
-6. **Lore validator** ensures the response follows game rules
-7. **Game state** is updated and saved back to the issue body
-8. **AI response** is posted as a comment
-
-## 🎨 Customization
-
-You can customize the game by:
-
-- Editing `docs/lore.md` to change the world lore and rules
-- Modifying `scripts/lore-validator.js` to add custom validation rules
-- Adjusting character creation in `scripts/character-manager.js`
-- Changing game mechanics in `scripts/game-engine.js`
-
-## 🤝 Contributing
-
-Feel free to submit issues or pull requests to improve the game!
-
-## 📄 License
-
-This project is open source and available for anyone to use and modify.
+1. **Player creates issue** with `game-active` label (or clicks class button)
+2. **GitHub Action triggers** on issue creation
+3. **Character is auto-created** using GitHub profile name
+4. **Game state** is saved in the issue body
+5. **Player comments** with actions in natural language
+6. **Grok AI** interprets actions with full game context
+7. **Lore validator** ensures responses follow game rules
+8. **Game state** updates and AI responds with narrative
 
 ---
 
-**Ready to start your adventure?** Create an issue and begin your journey! 🗡️✨
+## 🎨 Customization
 
+Customize your game by editing:
+
+- **`docs/lore.md`**: World lore and game rules
+- **`scripts/lore-validator.js`**: Validation rules
+- **`scripts/character-manager.js`**: Character creation logic
+- **`scripts/game-engine.js`**: Game mechanics
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+
+- 🐛 Report bugs
+- 💡 Suggest features
+- 🔧 Submit pull requests
+- 📖 Improve documentation
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+<div align="center">
+
+### 🗡️ Ready to start your adventure?
+
+**Choose your class above and begin your journey in Aetheria!** ✨
+
+Made with ❤️ and AI magic
+
+[⬆ Back to Top](#-aries-spring---github-rpg-adventure)
+
+</div>

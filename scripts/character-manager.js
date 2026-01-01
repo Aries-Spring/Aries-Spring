@@ -22,8 +22,13 @@ function isCharacterCreationComment(commentBody) {
 /**
  * Creates a new character for a user
  * Returns the character object if successful, null if more info needed
+ * @param {Object} gameState - The current game state
+ * @param {string} username - GitHub username
+ * @param {string|null} commentBody - Optional comment body for parsing (legacy support)
+ * @param {string|null} displayName - Optional display name (GitHub profile name)
+ * @param {string|null} className - Optional class name (for issue creation)
  */
-async function createCharacter(gameState, username, commentBody) {
+async function createCharacter(gameState, username, commentBody = null, displayName = null, className = null) {
   // Check if character already exists
   if (getCharacter(gameState, username)) {
     return getCharacter(gameState, username);
@@ -34,17 +39,28 @@ async function createCharacter(gameState, username, commentBody) {
     gameState.characters = {};
   }
 
-  // Try to extract character info from comment
-  const characterInfo = parseCharacterCreation(commentBody);
+  // Determine character name and class
+  let characterName = displayName || username;
+  let characterClass = className || 'Adventurer';
   
-  if (!characterInfo || !characterInfo.name) {
+  // If comment body provided (legacy support), try to parse from it
+  if (commentBody) {
+    const characterInfo = parseCharacterCreation(commentBody);
+    if (characterInfo) {
+      // Use parsed name if provided, otherwise use display name
+      characterName = characterInfo.name || characterName;
+      characterClass = characterInfo.class || characterClass;
+    }
+  }
+  
+  if (!characterName) {
     return null; // Need more info
   }
 
   // Create character with default stats
   const character = {
-    name: characterInfo.name,
-    class: characterInfo.class || 'Adventurer',
+    name: characterName,
+    class: characterClass,
     level: 1,
     health: 100,
     maxHealth: 100,

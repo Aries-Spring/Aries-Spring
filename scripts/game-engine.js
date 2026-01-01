@@ -62,6 +62,7 @@ function embedStateInIssueBody(issueBody, stateJson) {
 function getDefaultState() {
   return {
     characters: {},
+    issueCreator: null, // GitHub username of issue creator (for single-player lock)
     world: {
       time: 'morning',
       day: 1,

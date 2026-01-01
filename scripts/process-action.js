@@ -19,12 +19,35 @@ const commentBody = process.env.COMMENT_BODY || '';
 const commentUser = process.env.COMMENT_USER;
 const issueBody = process.env.ISSUE_BODY || '';
 const issueTitle = process.env.ISSUE_TITLE || '';
+const eventName = process.env.EVENT_NAME || 'issue_comment';
+const issueUser = process.env.ISSUE_USER || commentUser;
+
+/**
+ * Extracts class name from text (issue body or title)
+ */
+function extractClassFromText(text) {
+  const classes = [
+    'warrior', 'mage', 'rogue', 'cleric', 'ranger', 'paladin',
+    'bard', 'monk', 'warlock', 'druid', 'sorcerer', 'barbarian'
+  ];
+  
+  const lower = text.toLowerCase();
+  for (const className of classes) {
+    if (lower.includes(className)) {
+      return className.charAt(0).toUpperCase() + className.slice(1);
+    }
+  }
+  return null;
+}
 
 async function main() {
   try {
-    // Skip if comment is from bot
-    if (commentUser === 'github-actions[bot]' || commentUser.includes('[bot]')) {
-      console.log('Skipping bot comment');
+    const isIssueCreation = eventName === 'issues';
+    const currentUser = isIssueCreation ? issueUser : commentUser;
+    
+    // Skip if from bot
+    if (currentUser === 'github-actions[bot]' || currentUser.includes('[bot]')) {
+      console.log('Skipping bot action');
       return;
     }
 
@@ -48,18 +71,112 @@ async function main() {
     const currentIssueBody = issue.data.body || issueBody;
     let gameState = gameEngine.loadStateFromIssueBody(currentIssueBody);
     
+    // Store issue creator if not already set
+    if (!gameState.issueCreator) {
+      gameState.issueCreator = issueUser;
+      await updateIssueBody(gameState);
+    }
+    
+    // Multiplayer lock: Only allow issue creator to interact
+    if (gameState.issueCreator && currentUser !== gameState.issueCreator) {
+      const creatorCharacter = characterManager.getCharacter(gameState, gameState.issueCreator);
+      const creatorName = creatorCharacter ? creatorCharacter.name : gameState.issueCreator;
+      await postComment(
+        `🔒 **Adventure Locked**\n\n` +
+        `This adventure is locked to **${creatorName}**. Please create your own issue to start your adventure!\n\n` +
+        `Click one of the class buttons in the README to begin your journey!`
+      );
+      return;
+    }
+    
     // Check if character exists for this user
-    let character = characterManager.getCharacter(gameState, commentUser);
+    let character = characterManager.getCharacter(gameState, currentUser);
     let characterJustCreated = false;
     
-    // If no character exists, try to create one
-    if (!character) {
-      // Check if this comment is attempting character creation
-      if (characterManager.isCharacterCreationComment(commentBody)) {
+    // Handle issue creation: auto-create character
+    if (isIssueCreation && !character) {
+      // Extract class from issue title or body
+      const extractedClass = extractClassFromText(issueTitle + ' ' + currentIssueBody);
+      
+      if (extractedClass) {
+        // Fetch GitHub user profile for display name
+        let userDisplayName = currentUser;
+        try {
+          const userProfile = await octokit.rest.users.getByUsername({
+            username: currentUser,
+          });
+          userDisplayName = userProfile.data.name || userProfile.data.login;
+        } catch (error) {
+          console.warn('Failed to fetch user profile, using username:', error);
+        }
+        
+        // Create character with GitHub profile name
         character = await characterManager.createCharacter(
           gameState,
-          commentUser,
-          commentBody
+          currentUser,
+          null, // No comment body for issue creation
+          userDisplayName,
+          extractedClass
+        );
+        
+        if (character) {
+          characterJustCreated = true;
+          gameState.issueCreator = currentUser;
+          await updateIssueBody(gameState);
+          
+          // Post welcome message
+          await postComment(
+            `🎉 **Welcome, ${character.name}!**\n\n` +
+            `You have been created as a **${character.class}** in the world of Aetheria.\n\n` +
+            `**Starting Stats:**\n` +
+            `- Level: ${character.level}\n` +
+            `- Health: ${character.health}/${character.maxHealth}\n` +
+            `- Mana: ${character.mana}/${character.maxMana}\n` +
+            `- Gold: ${character.gold}\n` +
+            `- Location: ${character.location}\n\n` +
+            `**Your Attributes:**\n` +
+            `- Strength: ${character.stats.strength}\n` +
+            `- Dexterity: ${character.stats.dexterity}\n` +
+            `- Intelligence: ${character.stats.intelligence}\n` +
+            `- Wisdom: ${character.stats.wisdom}\n` +
+            `- Constitution: ${character.stats.constitution}\n` +
+            `- Charisma: ${character.stats.charisma}\n\n` +
+            `Your adventure begins now! Comment with actions like "I explore the village" or "I talk to the merchant" to start playing.`
+          );
+          return;
+        }
+      } else {
+        // Class not found in issue, prompt user
+        await postComment(
+          `❓ **Class Selection Required**\n\n` +
+          `I couldn't detect your class from the issue. Please edit this issue and include one of these classes in the title or body:\n\n` +
+          `**Available Classes:** Warrior, Mage, Rogue, Cleric, Ranger, Paladin, Bard, Monk, Warlock, Druid, Sorcerer, Barbarian\n\n` +
+          `Or use one of the class buttons in the README to create an issue with the class pre-selected!`
+        );
+        return;
+      }
+    }
+    
+    // If no character exists and this is a comment (not issue creation), try to create one
+    if (!character && !isIssueCreation) {
+      // Check if this comment is attempting character creation
+      if (characterManager.isCharacterCreationComment(commentBody)) {
+        // Fetch GitHub user profile for display name
+        let userDisplayName = currentUser;
+        try {
+          const userProfile = await octokit.rest.users.getByUsername({
+            username: currentUser,
+          });
+          userDisplayName = userProfile.data.name || userProfile.data.login;
+        } catch (error) {
+          console.warn('Failed to fetch user profile, using username:', error);
+        }
+        
+        character = await characterManager.createCharacter(
+          gameState,
+          currentUser,
+          commentBody,
+          userDisplayName
         );
         
         if (!character) {
@@ -103,13 +220,20 @@ async function main() {
         // No character and not trying to create one
         await postComment(
           '👋 **Welcome!**\n\n' +
-          'You don\'t have a character yet. To create one, comment with:\n' +
-          '```\n' +
-          'I want to create a character named [Your Name], a [Class]\n' +
-          '```'
+          'You don\'t have a character yet. Your character should have been created automatically when you opened this issue.\n\n' +
+          'If you see this message, please make sure your issue includes a class name (Warrior, Mage, Rogue, etc.) in the title or body.'
         );
         return;
       }
+    }
+    
+    // If still no character at this point, something went wrong
+    if (!character) {
+      await postComment(
+        '⚠️ **Character Not Found**\n\n' +
+        'Unable to create or find your character. Please ensure your issue includes a valid class name.'
+      );
+      return;
     }
 
     // Process the action
