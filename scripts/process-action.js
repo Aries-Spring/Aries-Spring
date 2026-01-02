@@ -317,6 +317,11 @@ async function processValidResponse(aiResponse, gameState, character) {
 
   // Post AI response as comment
   await postComment(formatResponse(aiResponse, character));
+
+  // Check if character has died (health <= 0)
+  if (character.health <= 0) {
+    await handleCharacterDeath(character, updatedState);
+  }
 }
 
 async function postComment(message) {
@@ -353,6 +358,41 @@ function formatResponse(aiResponse, character) {
          `**Location:** ${character.location || 'Unknown'}\n` +
          `**Health:** ${character.health || 100}/${character.maxHealth || 100}\n` +
          `**Level:** ${character.level || 1}`;
+}
+
+/**
+ * Handles character death by posting a death message and closing the issue
+ */
+async function handleCharacterDeath(character, gameState) {
+  // Generate fitting death message
+  const deathMessage = `💀 **Your Adventure Has Ended**
+
+${character.name}, the ${character.class}, has fallen in battle...
+
+**Final Stats:**
+- Location: ${character.location || 'Unknown'}
+- Final Level: ${character.level || 1}
+- Experience: ${character.experience || 0}
+- Gold: ${character.gold || 0}
+- Quests Completed: ${character.quests?.filter(q => q.status === 'completed').length || 0}
+
+Your journey in Aetheria has come to an end. May your legend live on in the tales of future adventurers.
+
+*This adventure has been concluded.*`;
+
+  // Post death message as comment
+  await postComment(deathMessage);
+
+  // Update issue body one final time with the final game state
+  await updateIssueBody(gameState);
+
+  // Close the issue
+  await octokit.rest.issues.update({
+    owner,
+    repo,
+    issue_number: issueNumber,
+    state: 'closed',
+  });
 }
 
 main().catch(console.error);

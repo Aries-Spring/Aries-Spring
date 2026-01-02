@@ -1,7 +1,7 @@
 ---
 name: Start New Game
 about: Create a new game session and character
-title: "[GAME] [Your Character Name]'s Adventure"
+title: "[GAME] [Your Name]'s Adventure"
 labels: game-active
 ---
 
@@ -12,8 +12,9 @@ labels: game-active
 Comment below to create your character! Each GitHub user can create one character per issue.
 
 Example comment:
+
 ```
-I want to create a character named [Your Name], a [Class]
+I want to create a character of class [Class]
 ```
 
 ### Available Classes
@@ -32,4 +33,3 @@ I want to create a character named [Your Name], a [Class]
 - **Barbarian**: High strength and constitution, fierce warrior
 
 Once your character is created, simply comment with actions in natural language to play!
-
